@@ -23,5 +23,5 @@ atmega128.build.board=AVR_ATMEGA128
 ```
 
 ## Other downloads:
-USBASP drivers for Windows: [download page](http://zadig.akeo.ie/)
-Serial(RS232) driver for Windows: [download page](https://serialio.com/drivers-and-set-up-usb-rs-232-adapter-in-windows)
+ * USBASP drivers for Windows: [download page](http://zadig.akeo.ie/) 
+ * Serial(RS232) driver for Windows: [download page](https://serialio.com/drivers-and-set-up-usb-rs-232-adapter-in-windows)
