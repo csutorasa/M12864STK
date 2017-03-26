@@ -1,3 +1,6 @@
+#ifndef M12864STK
+#define M12864STK
+
 #include <inttypes.h>
 #include <arduino.h>
 
@@ -140,6 +143,8 @@ extern LED led;
 extern Display display;
 extern Buzzer buzzer;
 extern Timer0 timer0;
+
+#endif
 
 //////////////////////////////////////////////////////////////////////////////////
 // Documentation of board functions
