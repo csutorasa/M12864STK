@@ -1,0 +1,19 @@
+###########################################
+# Syntax Coloring Map For M128/64 STK Board
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+timer0	KEYWORD1
+timer1	KEYWORD1
+timer2	KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+start	KEYWORD2
+stop	KEYWORD2
+onTick	KEYWORD2
