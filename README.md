@@ -1,27 +1,29 @@
 # M128/64 STK
 
-This project is an arduino library for my M128/64 STK board. It is a developer board with a ATMega128a micocontroller on it.
+This project is an arduino library for my M128/64 STK board.
+It is a developer board with a ATMega128a micocontroller on it.
 
-## How to use:
- * You need the latest sources as zip ([download](https://github.com/csutorasa/M12864STK/archive/master.zip)).
- * Open Arduino Studio.
- * Click Sketch/Include Library/Add .ZIP Library...
- * Select the file.
- * Done.
- 
-## Board configuration
-If you have never used ATMega128a with Arduino Studio, you should add it to board configuration. It can be found in {installdirectory}/hardware/arduino/avr/boards.txt. You should add these lines to the file:
-```
-atmega128.name=ATmega128
-atmega128.upload.using=usbasp
-atmega128.upload.maximum_size=126976
-atmega128.build.mcu=atmega128
-atmega128.build.f_cpu=8000000L
-atmega128.build.core=arduino
-atmega128.build.variant=standard
-atmega128.build.board=AVR_ATMEGA128
-```
+## Using the board
 
-## Other downloads:
- * USBASP drivers for Windows: [download page](http://zadig.akeo.ie/) 
- * Serial(RS232) driver for Windows: [download page](https://serialio.com/drivers-and-set-up-usb-rs-232-adapter-in-windows)
+You need the latest [release](https://github.com/csutorasa/m12864stk/releases/download/1.0.0/m12864stk.zip).
+
+Find your local data folder (on Windows it is in `%LOCALAPPDATA%` by default).
+Open `{BASE_DIR}\Arduino15\packages\arduino\hardware\` directory.
+Create `{BASE_DIR}\Arduino15\packages\arduino\hardware\m12864stk` direcotry and open it.
+Create `{BASE_DIR}\Arduino15\packages\arduino\hardware\m12864stk\1.0.0` direcotry and open it.
+Unzip `m12864stk.zip` into this directory.
+Restart Arduino IDE.
+
+## Using the libraries
+
+You need the latest [release](https://github.com/csutorasa/m12864stk/releases/download/1.0.0/m12864stk.zip).
+Unzip `m12864stk.zip` into a temporary directory.
+Open `libraries` directory.
+Create a zip archive from the library you want to use.
+Use the [official guide] to add this zip to the libraries in Arduino IDE.
+
+## Flashing
+
+The device can be flashed via ISP.
+A simple way is to flash the software with USBASP.
+You will need [drivers](http://zadig.akeo.ie/) for using it.

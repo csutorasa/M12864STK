@@ -1,0 +1,44 @@
+{
+    "packages": [
+        {
+            "name": "M128/64 STK",
+            "maintainer": "Ármin Csutorás <csutorasa@gmail.com>",
+            "websiteUrl": "https://github.com/csutorasa/m12864stk",
+            "email": "csutorasa@gmail.com",
+            "help": {
+                "online": "https://github.com/csutorasa/m12864stk/tree/master/README.md"
+            },
+            "platforms": [
+                {
+                    "name": "M128/64 STK board",
+                    "architecture": "avr",
+                    "version": "1.0.0",
+                    "help": {
+                        "online": "https://github.com/csutorasa/m12864stk/tree/master/README.md"
+                    },
+                    "url": "https://github.com/csutorasa/m12864stk/releases/download/1.0.0/m12864stk.zip",
+                    "archiveFileName": "m12864stk.zip",
+                    "checksum": "SHA-256:TODO",
+                    "size": "TODO",
+                    "boards": [
+                        {
+                            "name": "M128/64 STK"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "avr-gcc",
+                            "version": "4.8.1-arduino5"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "avrdude",
+                            "version": "6.0.1-arduino5"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
