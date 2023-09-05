@@ -1,6 +1,6 @@
 #include "display.h"
 
-#include <Arduino.h>
+#include <M12864stk.h>
 
 namespace display
 {

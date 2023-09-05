@@ -1,6 +1,6 @@
 #include "buzzer.h"
 
-#include <Arduino.h>
+#include <M12864stk.h>
 
 namespace buzzer
 {

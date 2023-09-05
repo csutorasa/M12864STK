@@ -7,7 +7,7 @@ m12864stk.upload.using=usbasp
 m12864stk.upload.maximum_size=126976
 m12864stk.build.mcu=atmega128
 m12864stk.build.f_cpu=8000000L
-m12864stk.build.core=arduino
+m12864stk.build.core=m12864stk
 m12864stk.build.variant=standard
 m12864stk.build.board=AVR_ATMEGA128
 

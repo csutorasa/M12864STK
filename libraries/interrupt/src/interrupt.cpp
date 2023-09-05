@@ -1,6 +1,6 @@
 #include "interrupt.h"
 
-#include <Arduino.h>
+#include <M12864stk.h>
 
 void noOpAction() { }
 

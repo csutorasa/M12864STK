@@ -6,7 +6,8 @@
 # Datatypes (KEYWORD1)
 ###########################################################
 
-Uart	KEYWORD1
+uart0	KEYWORD1
+uart1	KEYWORD1
 
 ###########################################################
 # Methods and Functions (KEYWORD2)

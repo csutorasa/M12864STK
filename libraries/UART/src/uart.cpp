@@ -1,6 +1,6 @@
 #include "uart.h"
 
-#include <Arduino.h>
+#include <M12864stk.h>
 
 uint16_t calculateRate(uint16_t baud) {
   return F_CPU / 16 / baud - 1;
