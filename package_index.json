@@ -13,12 +13,13 @@
                     "name": "M128/64 STK board",
                     "architecture": "avr",
                     "version": "1.0.0",
+                    "category": "Contributed",
                     "help": {
                         "online": "https://github.com/csutorasa/m12864stk/tree/master/README.md"
                     },
                     "url": "https://github.com/csutorasa/m12864stk/releases/download/1.0.0/m12864stk.zip",
                     "archiveFileName": "m12864stk.zip",
-                    "checksum": "SHA-256:EC906CBDE8AFFFE8AF2EDAC356E7B7BD3703FDB4BBE2B4087C7CF3036989F8CD",
+                    "checksum": "SHA-256:ec906cbde8afffe8af2edac356e7b7bd3703fdb4bbe2b4087c7cf3036989f8cd",
                     "size": "25762",
                     "boards": [
                         {
@@ -36,9 +37,22 @@
                             "name": "avrdude",
                             "version": "6.0.1-arduino5"
                         }
+                    ],
+                    "discoveryDependencies": [
+                        { 
+                            "packager": "arduino",
+                            "name": "serial-discovery"
+                        }
+                    ],
+                    "monitorDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "serial-monitor"
+                        }
                     ]
                 }
-            ]
+            ],
+            "tools": []
         }
     ]
 }
