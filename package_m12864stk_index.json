@@ -1,7 +1,7 @@
 {
     "packages": [
         {
-            "name": "M128/64 STK",
+            "name": "M12864STK",
             "maintainer": "Ármin Csutorás <csutorasa@gmail.com>",
             "websiteUrl": "https://github.com/csutorasa/m12864stk",
             "email": "csutorasa@gmail.com",
@@ -23,7 +23,7 @@
                     "size": "25766",
                     "boards": [
                         {
-                            "name": "M128/64 STK"
+                            "name": "M12864STK"
                         }
                     ],
                     "toolsDependencies": [
