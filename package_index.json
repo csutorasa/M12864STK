@@ -18,8 +18,8 @@
                     },
                     "url": "https://github.com/csutorasa/m12864stk/releases/download/1.0.0/m12864stk.zip",
                     "archiveFileName": "m12864stk.zip",
-                    "checksum": "SHA-256:TODO",
-                    "size": "TODO",
+                    "checksum": "SHA-256:F7FAD582561FA0E50B0377FF345CB2D2C007BBA4BC216D35DD6D7BDDB0F7141C",
+                    "size": "24916",
                     "boards": [
                         {
                             "name": "M128/64 STK"
