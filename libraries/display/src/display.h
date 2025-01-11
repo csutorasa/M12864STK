@@ -50,15 +50,15 @@ namespace display
   /**
    * Prints a character into the display.
    * @param ch Character
-   * @return mask for the character
-   */
-  uint8_t getMask(char ch);
-  /**
-   * Prints a character into the display.
-   * @param ch Character
    * @param pos Position of the character
    */
   void print(char ch, uint8_t pos);
+  /**
+   * Prints a character into the display.
+   * @param ch Character
+   * @return mask for the character
+   */
+  uint8_t getMask(char ch);
   /**
    * Refreshes the LEDs of the display for a single digit.
    */

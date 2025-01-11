@@ -1,0 +1,80 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+env:
+  libraryVersion: '1.0.1'
+
+jobs:
+  package:
+    name: Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Package button
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-button-library-${{ env.libraryVersion }}
+          path: libraries/button/
+      
+      - name: Package buzzer
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-buzzer-library-${{ env.libraryVersion }}
+          path: libraries/buzzer/
+
+      - name: Package display
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-display-library-${{ env.libraryVersion }}
+          path: libraries/display/
+      
+      - name: Package interrupt
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-interrupt-library-${{ env.libraryVersion }}
+          path: libraries/interrupt/
+      
+      - name: Package led
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-led-library-${{ env.libraryVersion }}
+          path: libraries/led/
+      
+      - name: Package timer
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-timer-library-${{ env.libraryVersion }}
+          path: libraries/timer/
+      
+      - name: Package uart
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-uart-library-${{ env.libraryVersion }}
+          path: libraries/uart/
+      
+      - name: Package button
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-button-library-${{ env.libraryVersion }}
+          path: libraries/button/
+      
+      - name: Package button
+        uses: actions/upload-artifact@v4
+        with:
+          name: m12864stk-button-library-${{ env.libraryVersion }}
+          path: |
+            libraries/
+            boards.txt
+            LICENSE
+            platform.txt
+            programmers.txt
+            README.md

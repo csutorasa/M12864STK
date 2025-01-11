@@ -71,6 +71,11 @@ namespace display
     }
   }
 
+  void print(char ch, uint8_t pos)
+  {
+    data[pos] = getMask(ch);
+  }
+
   uint8_t getMask(char ch)
   {
     if('0' <= ch && ch <= '9')
@@ -86,11 +91,6 @@ namespace display
       return letters[ch - 'a'];
     }
     return 0xff;
-  }
-
-  void print(char ch, uint8_t pos)
-  {
-    data[pos] = getMask(ch);
   }
 
   void refresh(uint8_t pos)

@@ -27,7 +27,8 @@ namespace uart0 {
    * @return non 0 if data is available
    */
   uint8_t available();
-} 
+}
+
 namespace uart1 {    
   /**
    * Starts UART communication, and enables two way commonication.
