@@ -61,7 +61,7 @@ jobs:
           name: m12864stk-uart-library-${{ env.libraryVersion }}
           path: libraries/UART/
 
-      - name: Create board manager structure
+      - name: Create board manager
         run: |
           mkdir -p ${{ env.libraryVersion }}
           cp -r cores ${{ env.libraryVersion }}/
@@ -71,14 +71,17 @@ jobs:
           cp platform.txt ${{ env.libraryVersion }}/
           cp programmers.txt ${{ env.libraryVersion }}/
           cp README.md ${{ env.libraryVersion }}/
+          zip -r m12864stk-${{ env.libraryVersion }}.zip ${{ env.libraryVersion }}
+        
+      - name: Print details
+        run: |
+          echo "# m12864stk-${{ env.libraryVersion }}.zip" >> $GITHUB_STEP_SUMMARY
+          echo "SHA256: $(sha256sum m12864stk-${{ env.libraryVersion }}.zip)" >> $GITHUB_STEP_SUMMARY
+          echo "Size: $(ls -l m12864stk.zip | cut -d' ' -f5)" >> $GITHUB_STEP_SUMMARY
 
       - name: Package board manager
         uses: actions/upload-artifact@v4
         id: package-board-manager
         with:
           name: m12864stk-${{ env.libraryVersion }}
-          # wildcard is needed to preserve ${{ env.libraryVersion }} in the zip
-          path: ${{ env.libraryVersion }}*/
-      
-      - name: Print SHA256
-        run: "echo 'SHA256: ${{ steps.package-board-manager.outputs.artifact-digest }}' >> $GITHUB_STEP_SUMMARY"
+          path: m12864stk-${{ env.libraryVersion }}.zip
