@@ -67,10 +67,11 @@ jobs:
           name: m12864stk-button-library-${{ env.libraryVersion }}
           path: libraries/button/
       
-      - name: Package button
+      - name: Package board manager
         uses: actions/upload-artifact@v4
+        id: package-board-manager
         with:
-          name: m12864stk-button-library-${{ env.libraryVersion }}
+          name: m12864stk-${{ env.libraryVersion }}
           path: |
             libraries/
             boards.txt
@@ -78,3 +79,6 @@ jobs:
             platform.txt
             programmers.txt
             README.md
+      
+      - name: Print SHA256
+        run: "echo 'SHA256: ${{ steps.package-board-manager.outputs.artifact-digest }}' >> $GITHUB_STEP_SUMMARY"
