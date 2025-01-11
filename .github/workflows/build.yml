@@ -67,6 +67,7 @@ jobs:
         with:
           name: m12864stk-${{ env.libraryVersion }}
           path: |
+            cores/
             libraries/
             boards.txt
             LICENSE
