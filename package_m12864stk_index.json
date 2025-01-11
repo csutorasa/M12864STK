@@ -38,6 +38,36 @@
                             "version": "6.0.1-arduino5"
                         }
                     ]
+                },
+                {
+                    "name": "M128/64 STK board",
+                    "architecture": "avr",
+                    "version": "1.0.1",
+                    "category": "Contributed",
+                    "help": {
+                        "online": "https://github.com/csutorasa/m12864stk/tree/master/README.md"
+                    },
+                    "url": "https://github.com/csutorasa/m12864stk/releases/download/1.0.1/m12864stk-1.0.1.zip",
+                    "archiveFileName": "m12864stk-1.0.1.zip",
+                    "checksum": "SHA-256:a9b52eaf995ac6f6b8892b214dc821b43494d77a01228bcbdef4a77f1f528ec1",
+                    "size": "118531",
+                    "boards": [
+                        {
+                            "name": "M12864STK"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "avr-gcc",
+                            "version": "7.3.0-atmel3.6.1-arduino7"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "avrdude",
+                            "version": "6.3.0-arduino18"
+                        }
+                    ]
                 }
             ],
             "tools": []
