@@ -22,4 +22,4 @@ You will need [drivers](http://zadig.akeo.ie/) for using it.
 
 ## Documentation
 
-Documentation is available [here](https://csutorasa.github.io/m12864stk/).
+Documentation is generated with [doxygen](https://www.doxygen.nl/) is available [here](https://csutorasa.github.io/m12864stk/).
