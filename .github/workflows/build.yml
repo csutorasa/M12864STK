@@ -60,20 +60,24 @@ jobs:
         with:
           name: m12864stk-uart-library-${{ env.libraryVersion }}
           path: libraries/UART/
-      
+
+      - name: Create board manager structure
+        run: |
+          mkdir -p ${{ env.libraryVersion }}
+          cp -r cores ${{ env.libraryVersion }}/
+          cp -r libraries ${{ env.libraryVersion }}/
+          cp boards.txt ${{ env.libraryVersion }}/
+          cp LICENSE ${{ env.libraryVersion }}/
+          cp platform.txt ${{ env.libraryVersion }}/
+          cp programmers.txt ${{ env.libraryVersion }}/
+          cp README.md ${{ env.libraryVersion }}/
+
       - name: Package board manager
         uses: actions/upload-artifact@v4
         id: package-board-manager
         with:
           name: m12864stk-${{ env.libraryVersion }}
-          path: |
-            cores/
-            libraries/
-            boards.txt
-            LICENSE
-            platform.txt
-            programmers.txt
-            README.md
+          path: ${{ env.libraryVersion }}/
       
       - name: Print SHA256
         run: "echo 'SHA256: ${{ steps.package-board-manager.outputs.artifact-digest }}' >> $GITHUB_STEP_SUMMARY"
