@@ -19,3 +19,7 @@ Use the [official guide](https://docs.arduino.cc/software/ide-v1/tutorials/insta
 The device can be flashed via ISP.
 A simple way is to flash the software with USBASP.
 You will need [drivers](http://zadig.akeo.ie/) for using it.
+
+## Documentation
+
+Documentation is available [here](https://csutorasa.github.io/m12864stk/).
